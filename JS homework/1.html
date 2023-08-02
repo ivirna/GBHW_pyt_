@@ -6,10 +6,15 @@
 </head>
 
 <script>
-    let name = prompt("Здравствуйте, как Вас зовут?");
-    document.write("<p>Здравствуйте, " + name + "!</p>");
+    function login() {
+        document.getElementById("nameOutput").innerText = "Здравствуйте, " + document.getElementById("nameInput").value + "!";
+    }
 </script>
 
 <body>
+    <p>Здравствуйте, как Вас зовут?</p>
+    <input id="nameInput" type="text">
+    <button onclick="login()">Войти</button>
+    <p id="nameOutput"></p>
 </body>
 </html>
