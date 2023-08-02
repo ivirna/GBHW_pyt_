@@ -1,0 +1,55 @@
+h1 {
+    color:chartreuse;
+    /* margin: 0; */
+}
+h1, h2, p {
+    margin: 0;
+}
+.section {
+    display: flex;
+    /* justify-content: center; если в один ряд по горизонтали*/
+    flex-direction: column;
+    align-items: center;
+}
+/* .fire {
+    color: red !important;
+} */
+.desc {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color:blueviolet;
+}
+.fire {
+    color: red;
+}
+.card {
+   width: 500px;
+   height: 200px;
+   /* dashed - пунктир, solid - сплошной */
+   border: 5px dashed rgb(255, 217, 0);
+   padding: 30px;
+   background-color: papayawhip; 
+   margin-bottom: 40px;
+}
+.card:hover {
+    background-color: skyblue;
+}
+.image {
+    /* на всю ширину родителя */
+    width: 100%;
+}
+.button {
+    width: 250px;
+    height: 50px;
+    background-color: azure;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: coral;
+}
+/* если хотим в одну строку */
+/* .list {
+    display: flex;
+    gap: 30px
+} */
