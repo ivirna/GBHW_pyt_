@@ -7,7 +7,15 @@
 
 <script>
     function login() {
-        document.getElementById("nameOutput").innerText = "Здравствуйте, " + document.getElementById("nameInput").value + "!";
+        switch (document.getElementById("nameInput").value) {
+            case "":
+                alert("Пожалуйста, введите своё имя");
+                break;
+            default:
+                let age = prompt("Введите свой возраст:");
+                document.getElementById("nameOutput").innerText = "Здравствуйте, " + document.getElementById("nameInput").value + " (" + age + " лет)!";
+                break;
+        }
     }
 </script>
 
