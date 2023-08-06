@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 1</title>
+</head>
+
+<script>
+    function login() {
+        switch (document.getElementById("nameInput").value) {
+            case "":
+                alert("Пожалуйста, введите своё имя");
+                break;
+            default:
+                let age = prompt("Введите свой возраст:");
+                document.getElementById("nameOutput").innerText = "Здравствуйте, " + document.getElementById("nameInput").value + " (" + age + " лет)!";
+                break;
+        }
+    }
+</script>
+
+<body>
+    <p>Здравствуйте, как Вас зовут?</p>
+    <input id="nameInput" type="text">
+    <button onclick="login()">Войти</button>
+    <p id="nameOutput"></p>
+</body>
+</html>
